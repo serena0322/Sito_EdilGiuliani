@@ -9,7 +9,6 @@ import Image from 'next/image';
 
 export default function Home() {
 
-  // LOGICA DI RESET SCROLL
   useEffect(() => {
     if (typeof window !== 'undefined') {
       window.history.scrollRestoration = 'manual';
@@ -25,12 +24,10 @@ export default function Home() {
     <main>
       <Hero />
       
-      {/* SEZIONE STORICA: L'Evoluzione dell'Impresa */}
       <section id="chi-siamo" className="scroll-mt-32 py-24 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             
-            {/* COLONNA SINISTRA: TESTO E BOLLO */}
             <Reveal>
               <div>
                 <h2 className="text-4xl lg:text-6xl font-black text-slate-900 uppercase tracking-tighter leading-none mb-8">
@@ -44,7 +41,6 @@ export default function Home() {
                     L’evoluzione dell’impresa è avvenuta in risposta alle trasformazioni urbanistiche del maceratese.
                   </p>
                   
-                  {/* ELEMENTO DI STILE: IL BOLLO +50 ANNI */}
                   <div className="flex items-center gap-6 py-6 border-y border-slate-100">
                     <div className="text-5xl font-black text-red-600 italic">+50</div>
                     <div className="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400 leading-tight">
@@ -77,7 +73,6 @@ export default function Home() {
               </div>
             </Reveal>
 
-            {/* COLONNA DESTRA: FOTO STORICA CON DIDASCALIA ESTERNA */}
             <Reveal delay={0.3}>
               <div className="relative flex flex-col h-full">
                 <div className="absolute -inset-4 bg-slate-50 rounded-3xl -rotate-1 hidden md:block" />
@@ -92,7 +87,6 @@ export default function Home() {
                   />
                 </div>
 
-                {/* DIDASCALIA ESTERNA */}
                 <div className="relative z-20 mt-6 bg-slate-900 rounded-xl p-5 shadow-lg border-l-4 border-red-600">
                   <div className="flex flex-col gap-1">
                     <div className="flex items-center gap-2">
@@ -110,7 +104,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-{/* SEZIONE SPECIALE: Restauro Fontana di Appignano */}
 <section id="restauro" className="py-32 bg-slate-900 text-white overflow-hidden">
   <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     
@@ -131,7 +124,6 @@ export default function Home() {
 
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
       
-      {/* COLONNA SINISTRA: Foto "Prima" e Specifiche */}
       <div className="lg:col-span-5 space-y-12">
         <Reveal delay={0.2}>
           <div className="relative aspect-[4/5] w-full max-w-[340px] rounded-2xl overflow-hidden border border-white/5 shadow-2xl">
@@ -175,7 +167,6 @@ export default function Home() {
         </Reveal>
       </div>
 
-      {/* COLONNA DESTRA: Foto "Dopo" */}
       <div className="lg:col-span-7 lg:pt-24">
         <Reveal delay={0.5}>
           <div className="relative aspect-[16/10] w-full rounded-3xl overflow-hidden border border-red-600/20 shadow-[0_30px_100px_rgba(225,29,72,0.15)]">
@@ -203,7 +194,6 @@ export default function Home() {
   </div>
 </section>
 
-      {/* SEZIONE CANTIERI */}
       <section id="lavori" className="scroll-mt-32 py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           

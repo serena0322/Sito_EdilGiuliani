@@ -6,7 +6,6 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           
-          {/* Colonna 1: Logo e Mission */}
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-2 mb-6">
               <div className="mb-0">
@@ -27,7 +26,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Colonna 2: Link Rapidi */}
           <div>
             <h4 className="text-red-600 font-bold uppercase text-xs tracking-[0.2em] mb-6">Navigazione</h4>
             <ul className="space-y-4 text-sm font-medium">
@@ -38,11 +36,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Colonna 3: Contatti */}
           <div>
             <h4 className="text-red-600 font-bold uppercase text-xs tracking-[0.2em] mb-6">Contatti</h4>
             <ul className="space-y-4 text-sm text-slate-300">
-              {/* Usiamo flex e gap-3 per dare respiro */}
               <li className="flex items-center gap-3">
                 <span className="text-lg">📍</span> 
                 <span>Treia, Macerata, Italia</span>
@@ -60,7 +56,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Colonna 4: Dati Legali */}
           <div>
             <h4 className="text-red-600 font-bold uppercase text-xs tracking-[0.2em] mb-6">Legal</h4>
             <ul className="space-y-4 text-sm text-slate-300">
@@ -72,7 +67,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Barra finale */}
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 uppercase tracking-widest">
           <p>© 2026 EdilGiuliani - Tutti i diritti riservati</p>
         </div>

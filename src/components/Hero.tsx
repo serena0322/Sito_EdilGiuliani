@@ -3,26 +3,23 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Reveal from '@/components/Reveal';
-import { ArrowRight, CheckCircle2 } from 'lucide-react'; // Assicurati di avere lucide-react installato
+import { ArrowRight, CheckCircle2 } from 'lucide-react'; 
 
 export default function Hero() {
   return (
     <section id="home" className="relative h-screen min-h-[600px] flex items-center overflow-hidden">
       
-      {/* 1. SFONDO IMMERSIVO */}
       <div className="absolute inset-0 z-0">
         <Image 
-          src="/lavori/Fontana.jpg" // Usa una foto di alta qualità (Fontana o Cantiere)
+          src="/lavori/Fontana.jpg" 
           alt="Sfondo Cantiere EdilGiuliani" 
           fill 
-          className="object-cover scale-105 animate-slow-zoom" // Un leggero zoom lento dà vita alla foto
+          className="object-cover scale-105 animate-slow-zoom" 
           priority
         />
-        {/* Overlay Gradiente: Scuro a sinistra per il testo, più chiaro a destra per far vedere la foto */}
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/70 to-slate-900/30" />
       </div>
       
-      {/* Elemento decorativo: Logo gigante sfumato sullo sfondo (opzionale) */}
       <div className="absolute -right-24 -bottom-24 opacity-5 pointer-events-none z-0 rotate-12 mix-blend-overlay">
          <Image src="/logo_sfondo.jpeg" alt="" width={800} height={800} />
       </div>
@@ -31,7 +28,6 @@ export default function Hero() {
   <div className="max-w-4xl">
     
     <Reveal>
-      {/* Titolo Principale */}
       <h1 className="font-black uppercase tracking-tighter leading-[0.9] mb-6">
         <span className="text-white text-5xl lg:text-7xl block mb-2">
           Costruire il <span className="text-transparent bg-clip-text bg-gradient-to-br from-red-500 to-red-700">Futuro</span>
@@ -51,11 +47,9 @@ export default function Hero() {
             </div>
           </Reveal>
 
-          {/* Bottoni CTA */}
           <Reveal delay={0.4}>
             <div className="flex flex-col sm:flex-row gap-4">
               
-              {/* Bottone Rosso Solido */}
               <Link 
                 href="/contatti" 
                 className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-300 bg-red-600 rounded-xl hover:bg-red-700 shadow-[0_0_20px_rgba(220,38,38,0.3)] hover:shadow-[0_0_30px_rgba(220,38,38,0.5)] hover:-translate-y-1"
@@ -66,7 +60,6 @@ export default function Hero() {
                 </span>
               </Link>
 
-              {/* Bottone Glass Effect */}
               <Link 
                 href="/#lavori" 
                 className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-300 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-white/10 hover:border-white/30"
@@ -79,7 +72,6 @@ export default function Hero() {
             </div>
           </Reveal>
 
-          {/* Trust Indicators (Piccoli dettagli tecnici in basso) */}
           <Reveal delay={0.6}>
             <div className="mt-16 flex flex-wrap gap-8 opacity-60">
               <div className="flex items-center gap-2">

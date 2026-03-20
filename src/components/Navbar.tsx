@@ -7,28 +7,22 @@ import { usePathname } from 'next/navigation';
 export default function Navbar() {
   const pathname = usePathname();
 
-  // FUNZIONE INGEGNERISTICA: Gestione universale dello scroll fluido
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, targetId: string) => {
-    // Verifichiamo se siamo nella home page
     if (pathname === '/') {
-      e.preventDefault(); // Blocca il salto netto standard
+      e.preventDefault(); 
       
       const element = document.getElementById(targetId);
       if (element) {
-        // Esegue lo scroll fluido calcolato dal browser
         element.scrollIntoView({
           behavior: 'smooth',
-          block: 'start', // Allinea l'elemento in alto
+          block: 'start', 
         });
         
-        // Opzionale: Aggiorna l'URL senza ricaricare (es. aggiunge #lavori)
         window.history.pushState(null, '', `#${targetId}`);
       }
     }
-    // Se non siamo in home (es. siamo in una pagina dettaglio), il Link funzionerà normalmente portandoti alla home
   };
 
-  // Funzione specifica per tornare in cima (Home)
   const handleScrollToTop = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     if (pathname === '/') {
       e.preventDefault();
@@ -43,16 +37,15 @@ export default function Navbar() {
   return (
     <nav className="fixed w-full z-50 px-4 sm:px-6 lg:px-8 top-4">
       <div className="max-w-7xl mx-auto">
-        <div className="bg-white/80 backdrop-blur-lg border border-white/20 shadow-lg shadow-slate-200/50 rounded-2xl px-6 py-3 flex justify-between items-center transition-all duration-300">
+        <div className="bg-white/80 backdrop-blur-lg border border-white/20 shadow-lg shadow-slate-200/50 rounded-2xl px-6 py-1.5 flex justify-between items-center transition-all duration-300">
           
-          {/* LOGO: Torna in cima */}
           <Link 
             href="/" 
             onClick={handleScrollToTop}
             className="flex items-center gap-4 group cursor-pointer"
           >
             <div
-              className="relative w-16 h-16 md:w-20 md:h-20 transition-transform duration-500 group-hover:scale-110 shrink-0"
+              className="relative w-8 h-8 md:w-10 md:h-10 transition-transform duration-500 group-hover:scale-110 shrink-0"
               style={{
                 maskImage: 'linear-gradient(to bottom, transparent, black 15%, black 85%, transparent), linear-gradient(to right, transparent, black 15%, black 85%, transparent)',
                 maskComposite: 'intersect',
@@ -81,10 +74,8 @@ export default function Navbar() {
             </div>
           </Link>
 
-          {/* Menu Desktop */}
           <div className="hidden md:flex items-center space-x-8">
             
-            {/* LINK HOME */}
             <Link 
               href="/" 
               onClick={handleScrollToTop}
@@ -93,7 +84,6 @@ export default function Navbar() {
               Home
             </Link>
 
-            {/* LINK CHI SIAMO - Scroll Fluido Attivato */}
             <Link 
               href="/#chi-siamo" 
               onClick={(e) => handleSmoothScroll(e, 'chi-siamo')}
@@ -102,7 +92,6 @@ export default function Navbar() {
               Chi Siamo
             </Link>
             
-            {/* LINK LAVORI - Scroll Fluido Attivato */}
             <Link 
               href="/#restauro" 
               onClick={(e) => handleSmoothScroll(e, 'restauro')}
@@ -111,7 +100,6 @@ export default function Navbar() {
               Lavori
             </Link>
             
-            {/* LINK CONTATTI - Scroll Fluido Attivato */}
             <Link 
               href="/contatti" 
               className="bg-red-600 text-white px-6 py-2.5 rounded-xl font-bold uppercase text-xs tracking-widest hover:bg-red-500 transition-all shadow-md shadow-red-200/50 hover:-translate-y-0.5 active:scale-95"

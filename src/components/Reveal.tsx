@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 interface RevealProps {
   children: React.ReactNode;
-  delay?: number; // Aggiungiamo questa riga
+  delay?: number; 
 }
 
 export default function Reveal({ children, delay = 0.1 }: RevealProps) { // Impostiamo un default
@@ -15,7 +15,7 @@ export default function Reveal({ children, delay = 0.1 }: RevealProps) { // Impo
       transition={{ 
         duration: 0.6, 
         ease: [0.22, 1, 0.36, 1],
-        delay: delay // Usiamo il delay passato come prop
+        delay: delay 
       }}
     >
       {children}
