@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Reveal from '@/components/Reveal';
-import { ArrowRight, CheckCircle2 } from 'lucide-react'; 
+import { ArrowRight, CheckCircle2, Phone } from 'lucide-react'; 
 
 export default function Hero() {
   return (
@@ -19,28 +19,24 @@ export default function Hero() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/70 to-slate-900/30" />
       </div>
-      
-      <div className="absolute -right-24 -bottom-24 opacity-5 pointer-events-none z-0 rotate-12 mix-blend-overlay">
-         <Image src="/logo_sfondo.jpeg" alt="" width={800} height={800} />
-      </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex flex-col justify-center pt-32 md:pt-40">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex flex-col justify-center pt-57 sm:pt-48 lg:pt-56">
   <div className="max-w-4xl">
     
     <Reveal>
       <h1 className="font-black uppercase tracking-tighter leading-[0.9] mb-6">
-        <span className="text-white text-5xl lg:text-7xl block mb-2">
+        <span className="text-white text-3xl sm:text-5xl lg:text-7xl block mb-2">
           Costruire il <span className="text-transparent bg-clip-text bg-gradient-to-br from-red-500 to-red-700">Futuro</span>
         </span>
-        <span className="text-slate-400 text-4xl lg:text-6xl block">
-          Restaurare la Storia.
+        <span className="text-slate-400 text-2xl sm:text-4xl lg:text-6xl block">
+          Restaurare la Storia
         </span>
       </h1>
     </Reveal>
           
           <Reveal delay={0.2}>
             <div className="border-l-4 border-red-600 pl-6 mb-10 bg-gradient-to-r from-slate-900/50 to-transparent py-2">
-              <p className="text-lg text-slate-300 font-medium max-w-2xl leading-relaxed">
+              <p className="text-base sm:text-lg text-slate-300 font-medium max-w-2xl leading-relaxed">
                 Punto di riferimento a Treia e Macerata per l'edilizia civile e il recupero monumentale. 
                 Trasformiamo progetti complessi in opere durature, unendo innovazione tecnica e rispetto per il territorio.
               </p>
@@ -59,6 +55,16 @@ export default function Hero() {
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </span>
               </Link>
+
+              <a 
+                href="tel:+393357728850" 
+                className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-300 bg-transparent border-2 border-white/70 rounded-xl hover:bg-white hover:text-red-600 shadow-lg hover:-translate-y-1"
+              >
+                <span className="tracking-widest uppercase text-xs flex items-center gap-2">
+                  Contatta Direttamente
+                  <Phone size={14} className="group-hover:scale-110 transition-transform" />
+                </span>
+              </a>
 
               <Link 
                 href="/#lavori" 

@@ -4,23 +4,23 @@ import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
 
 export default function Contatti() {
   return (
-    <main id="contatti" className="min-h-screen bg-white pt-32 pb-20">
+    <main id="contatti" className="min-h-screen bg-white pt-28 md:pt-32 pb-16 md:pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
 {/* 1. CONTAINER ESTERNO: Ultra-compatto */}
-<div className="mb-8 pt-20 md:pt-24 px-4 max-w-7xl mx-auto">
+<div className="mb-8 pt-4 md:pt-8 px-4 max-w-7xl mx-auto">
   
   {/* 2. CONTAINER INTERNO */}
   <div className="relative">
     
-    {/* SCRITTA SFONDO "CONTACT" */}
-    <h1 className="text-6xl md:text-9xl font-black text-slate-900/5 uppercase tracking-tighter absolute -top-6 md:-top-10 -left-2 select-none pointer-events-none z-0">
+    {/* SCRITTA SFONDO "CONTACT" - solo desktop */}
+    <h1 className="hidden md:block text-9xl font-black text-slate-900/5 uppercase tracking-tighter absolute -top-10 -left-2 select-none pointer-events-none z-0">
       Contact
     </h1>
     
     {/* CONTENUTO IN PRIMO PIANO */}
-    <div className="relative z-10 border-l-8 border-red-600 pl-6">
-      <h2 className="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tight leading-tight">
+    <div className="relative z-10 border-l-4 md:border-l-8 border-red-600 pl-4 md:pl-6">
+      <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tight leading-tight">
         Parliamo del tuo <span className="text-red-600">Progetto</span>
       </h2>
       <p className="text-slate-500 font-bold uppercase tracking-[0.3em] text-[10px] md:text-xs mt-3">
@@ -35,75 +35,69 @@ export default function Contatti() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 shadow-2xl overflow-hidden border border-slate-100 mb-12 rounded-3xl">
           
           {/* Colonna Info (Nera) */}
-          <div className="lg:col-span-5 bg-slate-900 p-12 text-white relative overflow-hidden">
-            <div className="relative z-10 space-y-12">
+          <div className="lg:col-span-5 bg-slate-900 p-5 sm:p-8 md:p-12 text-white relative overflow-hidden">
+            <div className="relative z-10 space-y-6 md:space-y-12">
               <div>
-                <h3 className="text-red-600 font-black uppercase tracking-widest text-sm mb-8">Recapiti Diretti</h3>
-                <div className="space-y-8">
-                  <div className="flex items-start gap-5">
-                    <div className="bg-red-600 p-3 rounded-xl shadow-lg shadow-red-900/50">
-                      <Phone size={24} />
+                <h3 className="text-red-600 font-black uppercase tracking-widest text-xs mb-5 md:mb-8">Recapiti Diretti</h3>
+                <div className="space-y-4 md:space-y-8">
+                  <div className="flex items-center gap-3 md:gap-5">
+                    <div className="bg-red-600 p-2 md:p-3 rounded-xl shadow-lg shadow-red-900/50 shrink-0">
+                      <Phone size={18} />
                     </div>
                     <div>
-                      <p className="text-slate-400 text-xs font-bold uppercase mb-1">Telefono</p>
-                      <p className="text-xl font-bold">+39 335 772 8850</p>
+                      <p className="text-slate-400 text-[10px] font-bold uppercase mb-0.5">Telefono</p>
+                      <p className="text-base md:text-xl font-bold">+39 335 772 8850</p>
                     </div>
                   </div>
                   
-                  <div className="flex items-start gap-5">
-                    <div className="bg-red-600 p-3 rounded-xl shadow-lg shadow-red-900/50">
-                      <Mail size={24} />
+                  <div className="flex items-center gap-3 md:gap-5">
+                    <div className="bg-red-600 p-2 md:p-3 rounded-xl shadow-lg shadow-red-900/50 shrink-0">
+                      <Mail size={18} />
                     </div>
-                    <div>
-                      <p className="text-slate-400 text-xs font-bold uppercase mb-1">Email</p>
-                      <p className="text-xl font-bold">edilgiuliani.m@libero.it</p>
+                    <div className="min-w-0">
+                      <p className="text-slate-400 text-[10px] font-bold uppercase mb-0.5">Email</p>
+                      <p className="text-sm md:text-xl font-bold break-all md:break-normal">edilgiuliani.m@libero.it</p>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-5">
-                    <div className="bg-red-600 p-3 rounded-xl shadow-lg shadow-red-900/50">
-                      <MapPin size={24} />
+                  <div className="flex items-center gap-3 md:gap-5">
+                    <div className="bg-red-600 p-2 md:p-3 rounded-xl shadow-lg shadow-red-900/50 shrink-0">
+                      <MapPin size={18} />
                     </div>
                     <div>
-                      <p className="text-slate-400 text-xs font-bold uppercase mb-1">Sede Sviluppo</p>
-                      <p className="text-xl font-bold">Treia, Macerata</p>
+                      <p className="text-slate-400 text-[10px] font-bold uppercase mb-0.5">Sede</p>
+                      <p className="text-base md:text-xl font-bold">Treia, Macerata</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="pt-12 border-t border-slate-800">
-                <h4 className="text-white font-black uppercase tracking-widest text-[10px] mb-6 flex items-center gap-2">
-                  <Clock size={16} className="text-red-600" /> Reperibilità e Contatti
+              <div className="pt-5 md:pt-12 border-t border-slate-800">
+                <h4 className="text-white font-black uppercase tracking-widest text-[10px] mb-4 md:mb-6 flex items-center gap-2">
+                  <Clock size={14} className="text-red-600" /> Reperibilità
                 </h4>
                 
-                <div className="space-y-3">
+                <div className="space-y-2">
                   <div className="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                    <span className="text-slate-400 text-sm">Lunedì — Venerdì</span>
-                    <span className="text-white font-bold text-sm">08:00 - 19:00</span>
+                    <span className="text-slate-400 text-xs">Lun — Ven</span>
+                    <span className="text-white font-bold text-xs">08:00 - 19:00</span>
                   </div>
                   
-                  <div className="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                    <span className="text-slate-400 text-sm">Sabato</span>
-                    <span className="text-white font-bold text-sm">9:00 - 13:00</span>
+                  <div className="flex justify-between items-center">
+                    <span className="text-slate-400 text-xs">Sabato</span>
+                    <span className="text-white font-bold text-xs">9:00 - 13:00</span>
                   </div>
-                </div>
-
-                <div className="mt-6 bg-red-600/10 border border-red-600/20 p-4 rounded-xl">
-                  <p className="text-slate-300 text-[11px] leading-relaxed italic">
-                    * Gli orari sopra indicati si riferiscono alla **reperibilità telefonica** e alla gestione delle richieste di contatto.
-                  </p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Colonna Form (Grigio Tech) */}
-          <div className="lg:col-span-7 bg-slate-50 p-12">
+          <div className="lg:col-span-7 bg-slate-50 p-5 sm:p-8 md:p-12">
             <form 
               action="https://api.web3forms.com/submit" 
               method="POST"
-              className="grid grid-cols-1 md:grid-cols-2 gap-8 text-slate-900"
+              className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 text-slate-900"
             >
               {/* Sostituisci YOUR_ACCESS_KEY_HERE con la chiave che ricevi su web3forms.com */}
               <input type="hidden" name="access_key" value="002fe1df-dc45-45b7-aca5-936d38173979" />
@@ -119,18 +113,32 @@ export default function Contatti() {
               <div className="md:col-span-2">
                 <label className="text-[10px] font-black uppercase text-slate-400 tracking-[0.2em] mb-2 block">Tipo di Lavoro</label>
                 <select name="subject" className="w-full bg-transparent border-b-2 border-slate-200 py-3 outline-none focus:border-red-600 transition-colors font-bold cursor-pointer appearance-none">
-                  <option>Ristrutturazione Edilizia</option>
                   <option>Nuova Costruzione</option>
+                  <option>Ristrutturazione Edilizia</option>
+                  <option>Restauro Monumentale</option>
+                  <option>Risanamento Straordinario</option>
+                  <option>Efficientamento Energetico / Sisma Bonus</option>
                   <option>Cartongesso / Finiture</option>
                   <option>Consulenza Tecnica</option>
+                  <option>Altro</option>
                 </select>
               </div>
               <div className="md:col-span-2">
                 <label className="text-[10px] font-black uppercase text-slate-400 tracking-[0.2em] mb-2 block">Il tuo Messaggio</label>
                 <textarea name="message" rows={4} required className="w-full bg-transparent border-b-2 border-slate-200 py-3 outline-none focus:border-red-600 transition-colors font-bold resize-none" placeholder="Parlaci del tuo progetto..."></textarea>
               </div>
+              <div className="md:col-span-2 pt-2 pb-2">
+                <label className="flex items-start gap-3 cursor-pointer group">
+                  <div className="relative flex items-center pt-0.5">
+                    <input type="checkbox" required className="w-4 h-4 text-red-600 border-slate-300 rounded focus:ring-red-600 focus:ring-2 cursor-pointer accent-red-600" />
+                  </div>
+                  <span className="text-xs text-slate-500 leading-relaxed group-hover:text-slate-700 transition-colors">
+                    Ho letto e accetto la <a href="/privacy" target="_blank" className="text-red-600 font-bold underline hover:text-red-700">Privacy Policy</a> per il trattamento dei miei dati.*
+                  </span>
+                </label>
+              </div>
               <div className="md:col-span-2 pt-4">
-                <button type="submit" className="bg-red-600 text-white px-12 py-5 font-black uppercase tracking-[0.2em] text-sm flex items-center gap-3 hover:bg-red-500 transition-all rounded-2xl shadow-lg shadow-red-900/20 hover:-translate-y-1 active:scale-95 group">
+                <button type="submit" className="w-full sm:w-auto justify-center bg-red-600 text-white px-8 md:px-12 py-4 md:py-5 font-black uppercase tracking-[0.2em] text-sm flex items-center gap-3 hover:bg-red-500 transition-all rounded-2xl shadow-lg shadow-red-900/20 hover:-translate-y-1 active:scale-95 group">
                   Invia Richiesta
                   <Send size={18} className="group-hover:translate-x-2 group-hover:-translate-y-1 transition-transform" />
                 </button>
@@ -140,8 +148,8 @@ export default function Contatti() {
         </div>
 
         {/* Riga Finale: Info Sede + Mappa Quadrata */}
-        <div className="mt-12 flex flex-col md:flex-row items-center md:items-end justify-between gap-8">
-          <div className="max-w-md pb-4 text-center md:text-left">
+        <div className="mt-12 flex flex-col lg:flex-row items-center lg:items-end justify-between gap-8 md:gap-12">
+          <div className="max-w-xl pb-4 text-center lg:text-left">
             <h4 className="text-slate-900 font-black uppercase tracking-widest text-sm mb-3">
               Consulenza e Progettazione
             </h4>

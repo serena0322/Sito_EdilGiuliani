@@ -9,8 +9,42 @@ body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: sans-serif;
+  /* Evita il rimbalzo fastidioso dei browser mobile (overscroll) */
+  overscroll-behavior: none;
 }
 
+/* ---- Scroll Fluido ---- */
 html {
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
+  /* Abilita scroll accelerato su iOS */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Rimozione del flash al tap su mobile (iOS/Android) */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* GPU compositing per elementi fissi (Navbar) */
+nav {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Promuove gli elementi animati su layer GPU dedicati per evitare reflow durante lo scroll */
+.motion-div,
+[data-framer-motion] {
+  will-change: opacity, transform;
+  backface-visibility: hidden;
+}
+
+/* Ottimizza le sezioni con effetti visivi pesanti */
+section {
+  contain: layout style;
+}
+
+/* Previene il ridisegno globale durante gli hover con effetti CSS */
+.group:hover .group-hover\:scale-110,
+.group:hover .group-hover\:grayscale-0 {
+  will-change: transform, filter;
 }
