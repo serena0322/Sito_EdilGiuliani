@@ -65,7 +65,7 @@ export default function Navbar() {
             className="flex items-center gap-2 md:gap-4 group cursor-pointer"
           >
             <div
-              className="relative w-12 h-12 md:w-16 md:h-16 transition-transform duration-500 group-hover:scale-110 shrink-0"
+              className="relative w-12 h-12 md:w-14 md:h-14 transition-transform duration-500 group-hover:scale-110 shrink-0"
             >
               <Image
                 src="/logo.png"
@@ -77,10 +77,10 @@ export default function Navbar() {
             </div>
 
             <div className="flex flex-col">
-              <span className="text-xl sm:text-2xl md:text-3xl font-black leading-none tracking-tighter text-slate-900 uppercase">
+              <span className="text-lg sm:text-xl md:text-2xl font-black leading-none tracking-tighter text-slate-900 uppercase">
                 EDIL<span className="text-red-600">GIULIANI</span>
               </span>
-              <span className="text-[8px] sm:text-[10px] font-bold tracking-[0.4em] text-slate-400 uppercase leading-none mt-1">
+              <span className="text-[7px] sm:text-[8px] md:text-[9px] font-bold tracking-[0.4em] text-slate-400 uppercase leading-none mt-0.5">
                 Costruzioni Civili
               </span>
             </div>

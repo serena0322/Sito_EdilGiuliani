@@ -8,7 +8,7 @@ export default function Certifications() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-12">
             <div className="text-center md:text-left max-w-sm">
               <h3 className="text-white font-black uppercase text-sm md:text-base tracking-widest mb-3">Riconoscimenti e Certificazioni</h3>
-              <p className="text-slate-400 text-xs md:text-sm leading-relaxed">Impresa accreditata per lavori pubblici, restauri monumentali e dotata di sistemi di gestione qualità certificati.</p>
+              <p className="text-slate-400 text-xs md:text-sm leading-relaxed">Impresa accreditata per lavori pubblici e dotata di sistemi di gestione qualità certificati.</p>
             </div>
             
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-80 hover:opacity-100 grayscale hover:grayscale-0 transition-all duration-500">
