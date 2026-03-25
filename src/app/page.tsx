@@ -40,14 +40,16 @@ export default function Home() {
             <Reveal>
               <div>
                 <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-slate-900 uppercase tracking-tighter leading-none mb-6 md:mb-8">
-                  Quarant'anni di <br />
-                  <span className="text-red-600">Esperienza Tecnica</span>
+                  Esperienza e <br />
+                  <span className="text-red-600">Professionalità</span>
                 </h2>
                 
                 <div className="space-y-6 md:space-y-8 text-slate-700">
                   <p className="text-sm sm:text-base lg:text-lg leading-relaxed">
-                    Costituita nel 1975, EdilGiuliani ha consolidato la propria presenza nel territorio di Treia operando con continuità nel settore delle costruzioni. 
-                    L’evoluzione dell’impresa è avvenuta in risposta alle trasformazioni urbanistiche del maceratese.
+                    EDILGIULIANI S.R.L. è presente nel settore edile da anni, specializzata nel campo dell'edilizia residenziale pubblica e privata. Obiettivo dell'impresa è l'ottenimento della piena soddisfazione dei clienti attraverso la selezione dei fornitori e il controllo continuo sulla qualità delle materie prime e delle maestranze.
+                  </p>
+                  <p className="text-sm sm:text-base lg:text-lg leading-relaxed">
+                    Grazie all'esperienza maturata in anni di attività, è in grado di garantire professionalità e sicurezza per i vostri investimenti a Treia (MC).
                   </p>
                   
                   <div className="flex items-center gap-6 py-6 border-y border-slate-100">
@@ -66,15 +68,15 @@ export default function Home() {
                     <div className="flex gap-4">
                       <div className="text-red-600 shrink-0"><Building2 size={24} /></div>
                       <div>
-                        <h4 className="font-black uppercase text-[10px] tracking-[0.2em] mb-1 text-slate-900">Settore Residenziale</h4>
-                        <p className="text-[13px] text-slate-500 leading-relaxed">Edifici multipiano e nuclei abitativi integrati.</p>
+                        <h4 className="font-black uppercase text-[10px] tracking-[0.2em] mb-1 text-slate-900">Edilizia Residenziale</h4>
+                        <p className="text-[13px] text-slate-500 leading-relaxed">Pubblica e privata, nuove costruzioni e ristrutturazioni.</p>
                       </div>
                     </div>
                     <div className="flex gap-4">
                       <div className="text-red-600 shrink-0"><HardHat size={24} /></div>
                       <div>
-                        <h4 className="font-black uppercase text-[10px] tracking-[0.2em] mb-1 text-slate-900">Opere Civili</h4>
-                        <p className="text-[13px] text-slate-500 leading-relaxed">Manutenzione straordinaria e nuove costruzioni.</p>
+                        <h4 className="font-black uppercase text-[10px] tracking-[0.2em] mb-1 text-slate-900">Qualità Garantita</h4>
+                        <p className="text-[13px] text-slate-500 leading-relaxed">Selezione fornitori e controllo continuo su materiali e maestranze.</p>
                       </div>
                     </div>
                   </div>
@@ -119,10 +121,10 @@ export default function Home() {
           <Reveal>
             <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
               <h2 className="text-3xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4 md:mb-6">
-                Le Nostre <span className="text-red-600">Specializzazioni</span>
+                I Nostri <span className="text-red-600">Servizi</span>
               </h2>
               <p className="text-slate-600 text-sm md:text-base lg:text-lg">
-                Dal piccolo intervento residenziale al grande recupero di beni vincolati, offriamo competenze trasversali gestite interamente da personale interno altamente qualificato.
+                Dalla ristrutturazione al cantiere di nuova costruzione, offriamo un servizio completo per l'edilizia residenziale pubblica e privata a Treia e nel maceratese.
               </p>
             </div>
           </Reveal>
@@ -133,28 +135,58 @@ export default function Home() {
                 <div className="w-12 h-12 bg-red-600/10 text-red-600 rounded-xl flex items-center justify-center mb-4 lg:mb-6 shrink-0">
                   <Building2 size={24} />
                 </div>
-                <h3 className="text-base lg:text-lg font-black uppercase tracking-tight text-slate-900 mb-2 lg:mb-3">Nuove Costruzioni</h3>
-                <p className="text-[13px] lg:text-sm text-slate-500 leading-relaxed flex-1">Progettazione e realizzazione di edifici residenziali, commerciali e industriali con le più moderne tecnologie edili e antisismiche.</p>
+                <h3 className="text-base lg:text-lg font-black uppercase tracking-tight text-slate-900 mb-2 lg:mb-3">Ristrutturazione Case</h3>
+                <p className="text-[13px] lg:text-sm text-slate-500 leading-relaxed flex-1">Interventi completi di ristrutturazione di abitazioni private: dal progetto alla consegna, con materiali selezionati e maestranze qualificate.</p>
+              </div>
+            </Reveal>
+
+            <Reveal delay={0.2} className="h-full">
+              <div className="h-full flex flex-col bg-white p-6 lg:p-8 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 hover:-translate-y-2 transition-transform duration-300">
+                <div className="w-12 h-12 bg-red-600/10 text-red-600 rounded-xl flex items-center justify-center mb-4 lg:mb-6 shrink-0">
+                  <HardHat size={24} />
+                </div>
+                <h3 className="text-base lg:text-lg font-black uppercase tracking-tight text-slate-900 mb-2 lg:mb-3">Costruzioni Civili</h3>
+                <p className="text-[13px] lg:text-sm text-slate-500 leading-relaxed flex-1">Realizzazione di edifici e opere civili nel rispetto delle normative vigenti, con attenzione alla solidità strutturale e alla sicurezza dei cantieri.</p>
               </div>
             </Reveal>
 
             <Reveal delay={0.3} className="h-full">
               <div className="h-full flex flex-col bg-white p-6 lg:p-8 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 hover:-translate-y-2 transition-transform duration-300">
                 <div className="w-12 h-12 bg-red-600/10 text-red-600 rounded-xl flex items-center justify-center mb-4 lg:mb-6 shrink-0">
-                  <HardHat size={24} />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M3 15h18"/></svg>
                 </div>
-                <h3 className="text-base lg:text-lg font-black uppercase tracking-tight text-slate-900 mb-2 lg:mb-3">Ristrutturazioni</h3>
-                <p className="text-[13px] lg:text-sm text-slate-500 leading-relaxed flex-1">Riqualificazione totale di appartamenti e condomini. Dal rifacimento tetto e facciate fino agli impianti e alle finiture d'interni.</p>
+                <h3 className="text-base lg:text-lg font-black uppercase tracking-tight text-slate-900 mb-2 lg:mb-3">Pavimenti</h3>
+                <p className="text-[13px] lg:text-sm text-slate-500 leading-relaxed flex-1">Posa in opera di pavimentazioni di ogni tipologia: ceramica, gres porcellanato, parquet e rivestimenti per interni ed esterni.</p>
               </div>
             </Reveal>
 
             <Reveal delay={0.4} className="h-full">
               <div className="h-full flex flex-col bg-white p-6 lg:p-8 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 hover:-translate-y-2 transition-transform duration-300">
                 <div className="w-12 h-12 bg-red-600/10 text-red-600 rounded-xl flex items-center justify-center mb-4 lg:mb-6 shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                 </div>
-                <h3 className="text-base lg:text-lg font-black uppercase tracking-tight text-slate-900 mb-2 lg:mb-3">Energia & Sisma</h3>
-                <p className="text-[13px] lg:text-sm text-slate-500 leading-relaxed flex-1">Interventi mirati all'efficientamento: isolamento termico continuo, efficientamento infissi, smaltimento amianto e consolidamento antisismico.</p>
+                <h3 className="text-base lg:text-lg font-black uppercase tracking-tight text-slate-900 mb-2 lg:mb-3">Rifacimento Facciate</h3>
+                <p className="text-[13px] lg:text-sm text-slate-500 leading-relaxed flex-1">Risanamento, intonacatura e tinteggiatura di facciate civili e condominiali, con interventi di isolamento termico e ripristino estetico.</p>
+              </div>
+            </Reveal>
+
+            <Reveal delay={0.5} className="h-full">
+              <div className="h-full flex flex-col bg-white p-6 lg:p-8 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 hover:-translate-y-2 transition-transform duration-300">
+                <div className="w-12 h-12 bg-red-600/10 text-red-600 rounded-xl flex items-center justify-center mb-4 lg:mb-6 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 20h20"/><path d="M4 20V10l8-6 8 6v10"/><path d="M10 20v-5h4v5"/></svg>
+                </div>
+                <h3 className="text-base lg:text-lg font-black uppercase tracking-tight text-slate-900 mb-2 lg:mb-3">Lavori Edili</h3>
+                <p className="text-[13px] lg:text-sm text-slate-500 leading-relaxed flex-1">Esecuzione di ogni tipologia di lavoro murario: demolizioni, tramezze, sopraelevazioni, consolidamento strutturale e finiture.</p>
+              </div>
+            </Reveal>
+
+            <Reveal delay={0.6} className="h-full">
+              <div className="h-full flex flex-col bg-white p-6 lg:p-8 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 hover:-translate-y-2 transition-transform duration-300">
+                <div className="w-12 h-12 bg-red-600/10 text-red-600 rounded-xl flex items-center justify-center mb-4 lg:mb-6 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                </div>
+                <h3 className="text-base lg:text-lg font-black uppercase tracking-tight text-slate-900 mb-2 lg:mb-3">Edilizia Pubblica & Privata</h3>
+                <p className="text-[13px] lg:text-sm text-slate-500 leading-relaxed flex-1">Esperienza consolidata nei settori dell'edilizia civile pubblica e privata, con piena capacità di gestione di appalti e opere in conto terzi.</p>
               </div>
             </Reveal>
           </div>
